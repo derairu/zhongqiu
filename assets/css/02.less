@@ -1,0 +1,226 @@
+// header
+.header{
+    padding: 0;
+    margin: 0;
+
+    .box{
+        padding: 1em 1em;
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            width: 19%;
+            color: #999999;
+            .sp{
+                color: #000;
+            }
+        }
+        .zog{
+            input{
+                width: 186px;
+                height: 27px;
+                border-radius: 35px;
+                border: 0px;
+                box-shadow: 1px 3px 15px 3px #ccc;
+            }
+        }
+        .right{
+            img{
+                width: 42%;
+                margin-right: 8px;
+            }
+            span{
+                color: #999999;
+            }
+        }
+
+    }
+    @media screen and (max-width:320px) {
+        &{
+            .box{
+                .left{
+                    width: 21%;
+                }
+                .zog{
+                    input{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+//temt
+.temt{
+    .box{
+        padding: 0em 1em;
+        border-top: 1px solid #c9c9c9;
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            width: 20%;
+            height: 540px;
+            border-right: 1px solid #c9c9c9;
+            .list{
+                label{
+                    margin-top: 10px;
+                    margin-bottom: 1em;
+                }
+                .btn1{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn2{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn3{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn4{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn5{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn6{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn7{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn8{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+
+                .btn9{
+                    text-align: center;
+                    width: 100px;
+                    height: 20px;
+
+                    &:hover{
+                        border-left:5px solid red;
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+        }
+        .right{
+            width: 80%;
+            position: relative;
+
+            input{
+                display: none;
+            }
+            input:checked + .cont{
+                opacity: 1;
+                z-index: 1;
+            }
+            .cont{
+                padding: 0 10px;
+                position: absolute;
+                top: 0; 
+                text-transform: uppercase;
+                opacity: 0;
+                z-index: -1;
+                .title{
+                    p{
+                        margin-bottom: 2em;
+                        padding-top: 10px;
+                        font-weight: bold;
+                    }
+                }
+                .item{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+
+                    .ver{
+                        width: 30%;
+                        margin-bottom: 2em;
+
+                        .txt2{
+                            color: red;
+
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width:420px) {
+        &{
+            padding-bottom: 3em;
+        }
+        
+    }
+}

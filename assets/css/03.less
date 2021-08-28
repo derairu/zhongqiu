@@ -1,0 +1,222 @@
+// header
+.header{
+    padding: 0;
+    margin: 0;
+
+    .box{
+        padding: 1em 1em;
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            width: 19%;
+            color: #999999;
+            .sp{
+                color: #000;
+            }
+        }
+        .zog{
+            input{
+                width: 186px;
+                height: 27px;
+                border-radius: 35px;
+                border: 0px;
+                box-shadow: 1px 3px 15px 3px #ccc;
+            }
+        }
+        .right{
+            img{
+                width: 42%;
+                margin-right: 8px;
+            }
+            span{
+                color: #999999;
+            }
+        }
+
+    }
+    @media screen and (max-width:320px) {
+        &{
+            .box{
+                .left{
+                    width: 21%;
+                }
+                .zog{
+                    input{
+                        width: 150px;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+// temts
+.temts{
+    .box{
+        padding: 10px 1em;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+
+            .txt2{
+                color: #b3b3b3;
+            }
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .btn-numbox {
+            overflow: hidden;
+            margin-top: -30px;
+        }
+        
+        .btn-numbox li {
+            float: left;
+        }
+        
+        .btn-numbox li .number,
+        .kucun {
+            display: inline-block;
+            font-size: 12px;
+            color: #808080;
+            vertical-align: sub;
+        }
+        
+        .btn-numbox .count {
+            overflow: hidden;
+            margin: 0px 0px 0 0px;
+        }
+        
+        .btn-numbox .count .num-jian,
+        .input-num,
+        .num-jia {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            cursor: pointer;
+            border: 1px solid #e6e6e6;
+        }
+        .btn-numbox .count .input-num {
+            width: 32px;
+            height: 26px;
+            color: #333;
+            border-left: 0;
+            border-right: 0;
+        }
+        .cont{
+            margin-top: 2em;
+
+            .item{
+                display: flex;
+                justify-content: space-between;
+                box-shadow: 1px 3px 15px 3px #ccc;
+
+                .bn{
+                    padding: 1em 1em;
+                    input{
+                        width: 15px;
+                        height: 15px;
+                        
+                    }
+                }
+                .bum{
+                    width: 25%;
+                    padding: 1em 0;
+                }
+                .list{
+                    padding: 1em 0;
+                    width: 50%;
+                    .tct1{
+                        font-weight: bold;
+                        margin: 0 5px;
+
+                    }
+                    .tct2{
+                        margin: 1em 5px 0 5px;
+                        color: #808080;
+                    }
+                    
+                }
+                .ls{
+                    padding: 1em 0;
+                    .t1 span{
+                        color: red;
+                    }
+                }
+    
+            }
+        }
+    }
+
+    @media screen and(max-width:320px) {
+        &{
+            .box{
+                .cont{
+                    .item{
+                        .ls{
+                            .t1 span{
+                                margin-bottom: 2em;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
+
+// vent
+.vent{
+    .box{
+        padding: 1em 1em;
+        display: flex;
+        justify-content: space-between;
+
+        .sp{
+            p{
+                font-size: 15px;
+            }
+        }
+        .bn{
+            width: 120px;
+            height: 30px;
+            background-color: #ff3d5f;
+            color: #ffff;
+            border-radius: 35px;
+            span{
+                margin-left: 31px;
+                line-height: 30px;
+            }
+        }
+    }
+}

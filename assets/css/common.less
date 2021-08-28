@@ -1,0 +1,43 @@
+// foont
+.foont{
+    position: sticky;
+    bottom:0;
+    left:0;
+    background: #fff;
+    z-index: 100;
+    .box{
+        padding: 1em 2em;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        .tet{
+            .item{
+                color: blue;
+            }
+
+            &:hover{
+                color: #48bcf2;
+                
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    @media screen and (max-width:320px) {
+        .foont{
+            .box{
+                .tet{
+                    width: 10%;
+
+                    p{
+                        font-size: 15px;
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+}
